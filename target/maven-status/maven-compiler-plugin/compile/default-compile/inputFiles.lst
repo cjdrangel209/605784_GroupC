@@ -1,0 +1,12 @@
+/Users/matthewkim/Documents/School/Summer 2026/Enterprise Java/Assignments/Project/maintenance-manager/src/main/java/edu/jhu/mrm/controller/AccountController.java
+/Users/matthewkim/Documents/School/Summer 2026/Enterprise Java/Assignments/Project/maintenance-manager/src/main/java/edu/jhu/mrm/repository/AccountRepository.java
+/Users/matthewkim/Documents/School/Summer 2026/Enterprise Java/Assignments/Project/maintenance-manager/src/main/java/edu/jhu/mrm/security/JWTFilter.java
+/Users/matthewkim/Documents/School/Summer 2026/Enterprise Java/Assignments/Project/maintenance-manager/src/main/java/edu/jhu/mrm/security/MyUserDetailsService.java
+/Users/matthewkim/Documents/School/Summer 2026/Enterprise Java/Assignments/Project/maintenance-manager/src/main/java/edu/jhu/mrm/model/Role.java
+/Users/matthewkim/Documents/School/Summer 2026/Enterprise Java/Assignments/Project/maintenance-manager/src/main/java/edu/jhu/mrm/dto/RegisterAccountDTO.java
+/Users/matthewkim/Documents/School/Summer 2026/Enterprise Java/Assignments/Project/maintenance-manager/src/main/java/edu/jhu/mrm/controller/AuthController.java
+/Users/matthewkim/Documents/School/Summer 2026/Enterprise Java/Assignments/Project/maintenance-manager/src/main/java/edu/jhu/mrm/MrmApplication.java
+/Users/matthewkim/Documents/School/Summer 2026/Enterprise Java/Assignments/Project/maintenance-manager/src/main/java/edu/jhu/mrm/service/AccountService.java
+/Users/matthewkim/Documents/School/Summer 2026/Enterprise Java/Assignments/Project/maintenance-manager/src/main/java/edu/jhu/mrm/security/JWTUtil.java
+/Users/matthewkim/Documents/School/Summer 2026/Enterprise Java/Assignments/Project/maintenance-manager/src/main/java/edu/jhu/mrm/security/SecurityConfiguration.java
+/Users/matthewkim/Documents/School/Summer 2026/Enterprise Java/Assignments/Project/maintenance-manager/src/main/java/edu/jhu/mrm/model/Account.java
