@@ -29,6 +29,9 @@ public class MaintRequest {
 	private String status;
 	
 	private String urgencyLevel;
+	
+	@Field("assigned_worker")
+	private String assignedWorker;
 
 	private Location location;
 	
@@ -84,6 +87,14 @@ public class MaintRequest {
 
 	public void setUrgencyLevel(String urgencyLevel) {
 		this.urgencyLevel = urgencyLevel;
+	}
+	
+	public String getAssignedWorker() {
+		return assignedWorker;
+	}
+	
+	public void setAssignedWorker(String assignedWorker) {
+		this.assignedWorker = assignedWorker;
 	}
 
 	public Location getLocation() {

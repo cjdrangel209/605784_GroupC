@@ -1,5 +1,7 @@
 package edu.jhu.mrm.repository;
 
+import java.util.List;
+
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
@@ -12,5 +14,5 @@ import edu.jhu.mrm.model.MaintRequest;
  */
 @Repository
 public interface MaintRequestRepository extends MongoRepository<MaintRequest, String>{
-	
+	List<MaintRequest> findByAccountId(String id);
 }
