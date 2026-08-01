@@ -39,6 +39,8 @@ public class MaintRequest {
 	
 	private String comments;
 	
+	private String completedDate;
+	
 	public MaintRequest()
 	{
 	}
@@ -191,5 +193,20 @@ public class MaintRequest {
 	 */
 	public void setComments(String comments) {
 		this.comments = comments;
+	}
+	
+	/**
+	 * @return {@link #completedDate}
+	 */
+	public String getCompletedDate() {
+		return completedDate;
+	}
+
+	/**
+	 * @param completedDate
+	 * 			{@link #completedDate}
+	 */
+	public void setCompletedDate(String completedDate) {
+		this.completedDate = completedDate;
 	}
 }
