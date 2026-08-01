@@ -6,6 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -32,6 +33,15 @@ public class MaintRequestController {
 	
 	@Autowired
 	private MaintRequestService requestService;
+	
+	/**
+	 * Utility function to obtain the user's name
+	 * 
+	 * @return The user name of the current user
+	 */
+	private String currentUsername() {
+        return SecurityContextHolder.getContext().getAuthentication().getName();
+    }
 	
 	/**
 	 * REST endpoint for creating a new maintenance request in the system.
@@ -95,7 +105,7 @@ public class MaintRequestController {
 	 */
 	@GetMapping("/{id}")
 	public ResponseEntity<MaintRequest> getRequests(@PathVariable String id) {
-		return ResponseEntity.ok(requestService.getByRequestId(id));
+		return ResponseEntity.ok(requestService.getByRequestId(id, currentUsername()));
 	}
 	
 	/**
@@ -109,7 +119,7 @@ public class MaintRequestController {
 	 */
 	@PutMapping("/{id}")
 	public ResponseEntity<MaintRequest> updateRequest(@PathVariable String id, @RequestBody MaintRequest update) {
-		return ResponseEntity.ok(requestService.update(id, update));
+		return ResponseEntity.ok(requestService.update(id, update, currentUsername()));
 	}
 	
 	/**
@@ -125,6 +135,6 @@ public class MaintRequestController {
 	@PutMapping("/assign/{id}")
 	@PreAuthorize("hasRole('ADMIN')")
 	public ResponseEntity<MaintRequest> assignRequest(@PathVariable String id, @RequestParam String workerId) {
-		return ResponseEntity.ok(requestService.assign(id, workerId));
+		return ResponseEntity.ok(requestService.assign(id, workerId, currentUsername()));
 	}
 }
