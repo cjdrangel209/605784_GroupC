@@ -9,8 +9,8 @@ import org.springframework.data.mongodb.core.mapping.Field;
  * File: MaintRequest.java
  * This file contains the definition of the MaintRequest model
  * Specifically designed to be used with MongoDB
- * Author: Cory Drangel and Matthew Kim
  * 
+ * @author Cory Drangel and Matthew Kim
  */
 @Document(collection = "request")
 public class MaintRequest {

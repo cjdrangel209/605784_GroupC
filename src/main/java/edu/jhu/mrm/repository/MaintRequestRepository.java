@@ -10,7 +10,8 @@ import edu.jhu.mrm.model.MaintRequest;
 /**
  * File: MaintRequestRepository.java
  * MongoRespoitory for MaintRequest with CRUD and username lookups
- * Author: Cory Drangel and Matthew Kim
+ * 
+ * @author Cory Drangel and Matthew Kim
  */
 @Repository
 public interface MaintRequestRepository extends MongoRepository<MaintRequest, String>{

@@ -1,5 +1,10 @@
 package edu.jhu.mrm.model;
 
+/**
+ * Representation of a location with a building number and apartment number.
+ * 
+ * @author Cory Drangel and Matthew Kim
+ */
 public class Location {
 	private Integer building;
 	

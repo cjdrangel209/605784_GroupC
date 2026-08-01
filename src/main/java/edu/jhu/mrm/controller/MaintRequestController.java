@@ -23,8 +23,8 @@ import edu.jhu.mrm.service.MaintRequestService;
  * File: MaintRequestController.java
  * This file contains the controller containing endpoints for Maintenance
  * Requests which includes create a request, get request by ID, update request
- * Author: Cory Drangel and Matthew Kim
  * 
+ * @author Cory Drangel and Matthew Kim
  */
 
 @RestController
